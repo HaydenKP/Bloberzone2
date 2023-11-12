@@ -1,0 +1,224 @@
+html, body {
+    font-family: sans-serif;
+    margin: 5px 5px 5px 10px;
+    padding: 0;
+}
+
+main {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundgif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#backgroundvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#backgroundbtn {
+    position: fixed;
+    left: 95%;
+    align-items: center;
+    background-color: rgb(2, 141, 240);
+    border: 1px solid rgb(2, 141, 240);
+    border-radius: 3px;
+    box-shadow: 0 5px 20px black;
+    font-family: sans-serif;
+    color: white;
+    height: 30px;
+    width: 90px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+#backgroundbtn:hover, #bgbtn:focus {
+    background-color: #1b6fde;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: fixed;
+    display: inline-block;
+    top: 60px;
+    left: 91%;
+    box-shadow: 0 5px 20px black;
+    border-radius: 3px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.song-parent {
+    position: relative;
+    display: inline-block;
+    left: 70px;
+}
+
+.change-station {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 5px;
+    background-color: #028df0;
+    width: 60px;
+    height: 60px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px black;
+}
+
+.song-content {
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 5px 20px black;
+    border-radius: 3px;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    top: 134px;
+    right: 60px
+}
+
+
+.btndiv:hover button,
+.songdiv:hover button {
+    color: black;
+    cursor: pointer;
+}
+
+.bg, .songbtn {
+    color: white;
+    min-width: 160px;
+    height: 30px;
+    border: none;
+    pointer-events: none;
+}
+
+.btndiv:nth-child(even) button,
+.songdiv:nth-child(even) button {
+    background-color: #028df0;
+}
+
+.btndiv:nth-child(odd) button,
+.songdiv:nth-child(odd) button {
+    background-color: #1b6fde;
+}
+
+.btndiv:nth-child(even) button:hover,
+.songdiv:nth-child(even) button:hover {
+    background-color: white;
+}
+
+.btndiv:nth-child(odd) button:hover,
+.songdiv:nth-child(odd) button:hover {
+    background-color: white;
+}
+
+
+#lofiplayer {
+    z-index: 1;
+    min-height: 100%;
+    display: relative;
+    width: fit-content;
+}
+
+.musical-note {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.playbtn {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    height: 30px;
+    border: solid 1px transparent;
+    box-shadow: 0px 2px 2px 1px black;
+    border-radius: 20px;
+    background-color: #028df0;
+}
+
+.pausebtn {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 45px;
+    height: 30px;
+    border: solid 1px transparent;
+    box-shadow: 0px 2px 2px 1px black;
+    border-radius: 20px;
+    background-color: #028df0;
+}
+
+.volume {
+    position: absolute;
+    bottom: 16px;
+    left: 80px;
+}
+
+.playbtn:hover, .pausebtn:hover,
+.change-station:hover {
+    cursor: pointer;
+    background-color: #1b6fde;
+}
+
+.playbtn:active, .pausebtn:active,
+ #backgroundbtn:active, .change-station:active {
+    transform: translateY(4px);
+}
+
+.lofiplayer {
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    #backgroundbtn {
+        left: 70%;
+    }
+
+    #dropdown-content {
+        left: 50%;
+        top: 100px
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1000px) {
+    #backgroundbtn {
+        left: 75%;
+    }
+
+    #dropdown-content {
+        left: 60%;
+        top: 6.5%;
+    }
+}

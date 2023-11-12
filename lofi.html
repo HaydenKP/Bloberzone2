@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lofi.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <title>Bloberzone</title>
+
+</head>
+<body>
+    <main>
+        <img/>
+        <img id="backgroundgif" class="animatedcity" src="sunset.gif" autoplay loop>
+        <video autoplay muted loop class="background-video" id="backgroundvid" src="irlandbeach.mp4" hidden></video>
+    </main>
+
+    <button id="backgroundbtn" class="link" >Background</button>
+
+        <div id="dropdown-content" class="dropdown-content">
+            <div id="btndiv1" class="btndiv"><button id="bg1" class="bg">Sunset</button></div>
+            <div id="btndiv2" class="btndiv"><button id="bg2" class="bg">Beach</button></div>
+            <div id="btndiv3" class="btndiv"><button id="bg3" class="bg">Lofigirl</button></div>
+            <div id="btndiv4" class="btndiv"><button id="bg4" class="bg">River</button></div>
+            <div id="btndiv5" class="btndiv"><button id="bg5" class="bg">Room</button></div>
+            <div id="btndiv6" class="btndiv"><button id="bg6" class="bg">Space</button></div>
+            <div id="btndiv7" class="btndiv"><button id="bg7" class="bg">City</button></div>
+            <div id="btndiv8" class="btndiv"><button id="bg8" class="bg">Pizza Shop</button></div>
+        </div>
+
+    <div class="song-dropdown">
+        <button class="change-station" id="change-station"><img src="musical-note.png" class="musical-note" alt="musical-note"></button>
+        <div class="song-parent">
+            <div class="song-content" id="song-content">
+                <div id="songdiv1" class="songdiv"><button id="songbtn1" class="songbtn">Synthwave</button></div>
+                <div id="songdiv2" class="songdiv"><button id="songbtn2" class="songbtn">Chillhop</button></div>
+                <div id="songdiv3" class="songdiv"><button id="songbtn3" class="songbtn">BlockBuster</button></div>
+                <div id="songdiv4" class="songdiv"><button id="songbtn4" class="songbtn">Synthwave2</button></div>
+            </div>
+
+    </div>
+    <div id="player"></div>
+   <div id="lofiplayer">
+    <button class="playbtn" id="playbtn"><img class="play-icon" src="play-button.png" alt="play-button"></button>
+    <button class="pausebtn" id="pausebtn"><img src="pause-button.png" alt="pause-button"></button>
+    <input type="range" class="volume" id="volumeSlider"  min="0" max="100" value="100" step="1"/>
+   </div>
+   <script src="lofi2.js"></script>
+   <script src="lofi.js"></script>
+   <script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>
