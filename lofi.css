@@ -112,6 +112,11 @@ main {
     cursor: pointer;
 }
 
+.bg, .songbtn, #backgroundbtn {
+    font-family: system-ui;
+    font-weight: bolder;    
+}
+
 .bg, .songbtn {
     color: white;
     min-width: 160px;
